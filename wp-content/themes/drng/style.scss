@@ -3311,10 +3311,10 @@ object {
 	}
 }
 .logo-right-img {
-	margin-top: -180px;
+	margin-top: -30px;
 	padding-right: 0;
 	position: relative;
-	z-index: -1;
+	z-index: -10;
 	overflow: hidden;
 	img {
 		width: 100%;
@@ -3876,7 +3876,11 @@ object {
 		margin-bottom: 18px !important;
 	}
 }
-
+.home{
+	.header-back-image{
+		z-index: 9;
+	}	
+}
 @-ms-viewport {
 	width: device-width;
 }

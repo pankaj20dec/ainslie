@@ -88,7 +88,7 @@ You don't have javascript enabled! Please download Google Chrome!
 		</div>
 	  </div><!--.nav-section--> 
   <div class="site-header-main">
-    <div class="container-fluid">
+    <!--<div class="container-fluid">
       <div class="row">
         <div class="col-xs-4"></div>
         <div class="col-xs-4 logo-top-img">
@@ -109,30 +109,12 @@ You don't have javascript enabled! Please download Google Chrome!
         </div>
         <div class="col-sm-4"></div>
       </div>
-      <!--row--> 
-    </div>
+      
+    </div>-->
     <!--container-->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-5 col-xs-6 col-xs-offset-2 logo-section">
-          <div class="site-branding"> 
-			<?php twentysixteen_the_custom_logo(); ?>
-            <?php 
-					$description = get_bloginfo( 'description', 'display' ); ?>
-          </div>
-          <!-- .site-branding -->
-
-		  <?php echo get_post(2)->post_content; ?>
-          <div class="social-links-icon">
-            <ul>
-              <li> <a class="genericon genericon-facebook-alt" href="<?php echo $options['fb_title']; ?>"><span class="screen-reader-text">Facebook</span></a> </li>
-              <li> <a class="genericon genericon-instagram" href="<?php echo $options['insta_title']; ?>"><span class="screen-reader-text">Instagram</span></a> </li>
-              <li> <a class="genericon genericon-twitter" href="<?php echo $options['tw_title']; ?>"><span class="screen-reader-text">Twitter</span></a> </li>
-            </ul>
-          </div>
-        </div>
-        <!--col-sm-6-->
-        <div class="col-xs-5 logo-right-img">
+        <div class="col-xs-12 logo-right-img no-pad">
           <?php 
             
             $postid = rnd_get_image_id($options['image_2_logo']);
@@ -143,7 +125,7 @@ You don't have javascript enabled! Please download Google Chrome!
 
           <img src="<?php echo $options['image_2_logo']; ?>">
           <?php } else { ?>
-          <img src="<?php echo get_template_directory_uri ();?>/images/img2.jpg">
+          <img src="<?php echo get_template_directory_uri ();?>/images/home-bg.jpg">
           <?php } ?>
         </div>
         <!--col-sm-6--> 
