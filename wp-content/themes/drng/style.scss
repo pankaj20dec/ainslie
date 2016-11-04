@@ -335,7 +335,7 @@ textarea {
 	border-radius: 0;
 	padding: 5px;
 	width: 100%;
-	height: 108px;
+	height: 98px;
 	&:focus {
 		background-color: #fff;
 		border-color: #007acc;
@@ -368,7 +368,7 @@ input[type="submit"] {
 	-webkit-appearance: button;
 	cursor: pointer;
 	background: none;
-	border: 3px solid;
+	border: 4px solid;
 	font-family: $font-family_4;
 	border-radius: 0;
 	color: $color_2;
@@ -379,6 +379,8 @@ input[type="submit"] {
 	text-transform: uppercase;
 	&:hover {
 		background: none;
+		border: 4px solid #00afa0;
+		color: #00afa0;
 	}
 	&:focus {
 		background: none;
@@ -1045,32 +1047,32 @@ legend {
 }
 h1 {
 	clear: both;
-	font-weight: 700;
+	/* font-weight: 700; */
 	text-rendering: optimizeLegibility;
 	font-family: $font-family_4;
 	font-size: 60px;
 }
 h2 {
 	clear: both;
-	font-weight: 700;
+	/* font-weight: 700; */
 	text-rendering: optimizeLegibility;
 	font-family: $font-family_4;
 }
 h4 {
 	clear: both;
-	font-weight: 700;
+	/* font-weight: 700; */
 	text-rendering: optimizeLegibility;
 	font-family: $font-family_4;
 }
 h5 {
 	clear: both;
-	font-weight: 700;
+	/* font-weight: 700; */
 	text-rendering: optimizeLegibility;
 	font-family: $font-family_4;
 }
 h6 {
 	clear: both;
-	font-weight: 700;
+	/* font-weight: 700; */
 	text-rendering: optimizeLegibility;
 	font-family: $font-family_4;
 }
@@ -1728,7 +1730,7 @@ input[type="text"] {
 	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 	border: none;
 	border-radius: 0;
-	padding: 5px;
+	padding: 6px 5px;
 	color: $color_1;
 	width: 100%;
 	&:focus {
@@ -2013,7 +2015,7 @@ input[type="search"].search-field {
 	}
 	li {
 		display: inline-block;
-		margin: 5px 20px;
+		margin: 5px 25px;
 		position: relative;
 		&:hover {
 			a {
@@ -3357,7 +3359,7 @@ object {
 	}
 }
 .nav-section {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 .section-heading {
 	font-size: 60px;
@@ -3718,7 +3720,7 @@ object {
 	}
 	form {
 		margin: 0 auto;
-		max-width: 500px;
+		max-width: 520px;
 		.col-sm-5 {
 			padding: 0 5px;
 			width: 38%;
@@ -3729,17 +3731,18 @@ object {
 		}
 	}
 	input[type="submit"] {
-		font-size: 18px;
+		font-size: 24px;
 		font-weight: normal;
-		margin: 64px 0 0;
-		padding: 10px;
+		margin: 54px 0 0;
+		padding: 6px;
 		width: 100%;
 	}
 }
 .contact-page-inner {
-	background: #000000;
-	padding: 60px 0;
+	background: #2f2f2f;
+	padding: 60px 0 20px;
 	color: $color_2;
+	text-align: center;
 }
 .page-template-contact-page-template {
 	.sign-up-section {
@@ -3843,6 +3846,10 @@ object {
 .no-pad{
 	padding: 0;
 }
+.centered{
+	margin: 0 auto;
+	float: none;
+}
 .link-button{
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 3px solid;
@@ -3865,6 +3872,99 @@ object {
     border-bottom: 2px solid;
     padding: 20px 0 15px;
 }
+.page-container{
+	padding-bottom: 40px;
+}
+.page-container .container {
+    margin: 0 auto;
+    max-width: 990px;
+    width: auto;
+}
+.title{
+	margin: 0 0 35px;
+	text-align: center;
+}
+.sub-heading{
+	font-size: 31px;
+	color: #00afa0;
+	line-height: 1;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+}
+.quote{
+	letter-spacing: 4px;
+	color: #00afa0;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.page-template-contact-page-template .sub-heading{
+	color: #fff;
+	letter-spacing: 5px;
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+.page-template-template-expertise{
+	.sign-up-section{
+		display: none;
+	}
+}
+.page-template-template-who-wework-with{
+	.sign-up-section{
+		display: none;
+	}
+}
+.page-template-template-who-wework-with h1{
+	color: #00afa0;
+}
+.page-template-template-who-wework-with .work-with{
+	padding-top: 40px;
+}
+.page-template-template-who-wework-with .work-with .logos img{
+	/* position: relative;
+	top: 50%;
+	transform: translateY(-50%); */
+}
+.phone-email {
+    clear: both;
+    margin: 0 auto;
+    max-width: 520px;
+	padding-top: 25px;
+}
+.phone-number {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 38%;
+	.fa.fa-phone {
+		font-size: 25px;
+		vertical-align: middle;
+	}
+	span{
+		padding-left: 15px;
+	}
+}
+.email-address{
+	display: block;
+    float: left;
+    text-align: left;
+    width: 62%;
+	.fa.fa-envelope {
+		font-size: 25px;
+		padding-right: 15px;
+		vertical-align: middle;
+		display: inline-block;
+		margin-top: -2px;
+	}
+	span a{
+		color: #fff;
+		&:hover{
+			color: #00afa0;
+			text-decoration: none;
+		}
+	}
+	
+}
 .lets-chat{
 	text-align: center;
 }
@@ -3881,6 +3981,14 @@ object {
 		z-index: 9;
 	}	
 }
+/**************  ninja form ***********/
+.nf-form-fields-required{
+	display: none;
+}
+.contact-form {
+    padding: 20px 0;
+}
+
 @-ms-viewport {
 	width: device-width;
 }
