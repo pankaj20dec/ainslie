@@ -114,7 +114,7 @@ You don't have javascript enabled! Please download Google Chrome!
     <!--container-->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 logo-right-img no-pad">
+        <div class="col-xs-12 logo-right-img no-pad wheight">
           <?php 
             
             $postid = rnd_get_image_id($options['image_2_logo']);
@@ -127,6 +127,13 @@ You don't have javascript enabled! Please download Google Chrome!
           <?php } else { ?>
           <img src="<?php echo get_template_directory_uri ();?>/images/home-bg.jpg">
           <?php } ?>
+			<div class="intro-page">
+				<div class="intro-heading">HELLO</div>
+				<div class="intro-subheading">Is it me you’re looking for?</div>
+			</div>
+			<div class="home-logo">
+				<img src="<?php echo get_template_Directory_uri();?>/images/home-logo.png" alt="Ainslie" />
+			</div>
         </div>
         <!--col-sm-6--> 
       </div>

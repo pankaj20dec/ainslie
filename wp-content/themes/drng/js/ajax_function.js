@@ -1,6 +1,12 @@
-
+var wh,daring;
+	daring = {
+		sizing: function(){
+			wh = $(window).height();
+			$('.wheight').css({'height': wh});
+		}
+	}
 jQuery(document).ready(function(){
-	
+	daring.sizing();
 
 //Blog page
 var ppp = 6; // Post per page
@@ -134,4 +140,12 @@ jQuery("#more_press_blog").on("click",function(){ // When btn is pressed.
 	        tb_remove();
 	    
 		}
+		
 });
+$(window).load(function(){
+	daring.sizing();	
+});
+$(window).resize(function(){
+	daring.sizing();	
+});
+

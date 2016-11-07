@@ -49,7 +49,7 @@ get_header();
  <section class="services-accordion-section container-fluid">
  	<div class="row"> 
     <?php 
-			query_posts('post_type=services&showposts=-1&order=DESC');
+			query_posts('post_type=services&showposts=-1&order=ASC');
 	 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>	
 <?php $c = 0; ?>
             <div id="accordion" role="tablist" class="col-sm-8 services-accordion-content" aria-multiselectable="true">
@@ -57,9 +57,11 @@ get_header();
                 <?php the_excerpt(); ?>
                 <div id="collapse-<?php the_ID(); ?>" class="panel-collapse collapse <?php if( $c == 1 ) echo 'in'; ?>" role="tabpanel" aria-labelledby="heading-<?php the_ID(); ?>">
                     <?php the_content(); ?>
-                </div>
+					<!--<a href="#" class="link-button">Tell me more</a>-->
+				</div>
+				
                 <a class="arrow-icon genericon genericon-expand" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php the_ID(); ?>" aria-expanded="true" aria-controls="collapse-<?php the_ID(); ?>">
-        </a>
+				</a>
                 
 			</div>
 <?php endwhile; endif;
